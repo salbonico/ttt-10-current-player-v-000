@@ -7,13 +7,13 @@ def turn_count(board)
   end
   end
   return counter
-end  
+end
 
 
 
 def current_player(board)
-player = turn_count(board)
-if player % 2 == 0
+
+if turn_count(board) % 2 == 0
   return "X"
 else return "O"
 end
